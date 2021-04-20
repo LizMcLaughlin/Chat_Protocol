@@ -63,8 +63,7 @@ $ Host:
 After the user enters host and prefered encoding information on the command line, all remaining activity is through the GUI interface. The user does not see any protocol logic while operating the chat app. Messages are sent and received through GUI windows and buttons.
 
 
-
-
+Language: python3
 
 
 
