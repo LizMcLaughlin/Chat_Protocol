@@ -44,7 +44,7 @@ def quit (server.py) -> “LISTEN” state
 
 ### Concurrent
 
-I decided to play with both threading and select in my implementation. My server uses the select module to enable multiplie client access. A selector object is created for the server to monitor for incoming connection requests. Then an additional selector is created for each client to listen for and direct incoming read events to the delegate function. As mentioned earlier, the delegate function directs the event to the appropriate function (state) after parsing the packet and reading in the method request.
+I decided to play with both threading and select in my implementation. My server uses the select module to enable multi client access. A selector object is created for the server to monitor for incoming connection requests. Then an additional selector is created for each client to listen for and direct incoming read events to the delegate function. As mentioned earlier, the delegate function directs the event to the appropriate function (state) after parsing the packet and reading in the method request.
 Threading is used in the client program to allow for incoming messages concurrent with sending. A separate thread of control is created for messages appending to the chat window. The client can then type and send messages concurrently.
 
 ### Service
